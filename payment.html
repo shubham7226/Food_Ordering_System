@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pay Bill</title>
+</head>
+<body>
+    <hr>
+    <h1 align="center">PAYMENT</h1>
+    <hr>
+	<div class="navbar">
+ 	<a class="active"  href="index.html"> Home</a> 
+ 	 <a href="contactus.html"> Contact</a> 
+	 <a href="order.html"> order</a>
+ 	 <a href="login.html"> Login</a>
+	</div>
+
+    <center>
+            
+        <table border="0" height="200" width="500">
+            <tr>
+                <td align="center">
+                    <label>Card No:</label>
+                </td>
+                <td align="center">
+                    <input id="number" type="text" placeholder="Your Card no*" required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <label>CVV:</label>
+                </td>
+                <td align="center">
+                    <input type="number" id="cvv" placeholder="Enter cvv"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <label>Amount:</label>
+                </td>
+                <td align="center">
+                    <input type="number" id="amount" placeholder="Enter Ammount"><br><br>
+                </td>
+            </tr>
+        </table><br>
+             <input type="radio" name="type" id="Master-card">Master Card&nbsp;
+            <input type="radio" name="type" id="Rupay">RuPay&nbsp;
+            <input type="radio" name="type" id="visa">VISA<br><br><br>
+        </table><br>
+        <button>Procced</button>
+    </center>
+
+</body>
+</html>
