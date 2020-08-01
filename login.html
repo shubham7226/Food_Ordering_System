@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+	<link rel="stylesheet" href="css/file.css">
+    <style>
+
+	input[type=text] {
+	  width: 100%;
+	  padding: 12px 20px;
+	  margin: 8px 0;
+	  box-sizing: border-box;
+	  border: 3px solid #ccc;
+	  -webkit-transition: 0.5s;	
+	  transition: 0.5s;
+	  outline: none;
+	}
+	input[type=password] {
+	  width: 100%;
+	  padding: 12px 20px;
+	  margin: 8px 0;
+	  box-sizing: border-box;
+	  border: 3px solid #ccc;
+	  -webkit-transition: 0.5s;	
+	  transition: 0.5s;
+	  outline: none;
+	}
+
+	input[type=text]:focus {
+ 	 border: 3px solid #555;
+	}
+
+	input[type=password]:focus {
+ 	 border: 3px solid #555;
+	}
+	</style>
+</head>
+<body>
+<br><br><br>
+<hr>
+<h1 align="center">Food ordering System</h1>
+<hr><br><br><br>
+    <form action="./home.html" method="post" align="center">
+        <table align="center">
+	<tr>
+		<td>
+          		<label for="mail"><b>Username:</b></label>
+		</td>
+		<td colspan="2">
+			<input type="text" placeholder="Enter Email" name="mail" required><br><br>
+		</td>
+        </tr>
+        <tr>
+		<td>
+            		<label for="psw"><b>Password:</b></label>
+		</td>
+		<td colspan="2">
+            		<input type="password" placeholder="Enter Password" name="psw" required><br><br>
+		</td>
+       </tr>
+      	<tr>
+		<td>
+			<label><input type="checkbox" checked="checked" name="remember"> Remember me</label> <br>
+		</td>
+        </tr>
+        <tr >
+		<td >
+			<button type="submit">Login</button>
+		</td>
+	</tr>
+       <tr>
+		<td>
+			<a href="#">Forgot password?</a>
+		</td>
+	</tr>
+       <tr>
+		<td>
+			<a href="signup.html">New Account</a>
+		</td>
+	</tr>
+        </table>
+      </form>
+</body>
+</html>
