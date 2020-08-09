@@ -1,58 +1,75 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp Page</title>
-	
 	<link rel="stylesheet" href="css/file.css">
+	<script src="javascript/register.js"></script> 
 </head>
 <body>
-<hr>
+<h1 align="center">Food ordering System</h1>
+	<ul>
+ 	 <li><a class="active"  href="index.html"> Home</a></li> 
+ 	 <li><a href="contactus.html"> Contact</a></li> 
+	 <li><a href="order.html"> order</a></li>
+ 	<li> <a href="login.html"> Login</a></li>
+	</ul>
+	<br>
+	<hr>
 <h1 align="center">SIGN UP</h1>
 <hr><br>
 <p>Please fill in this form to create an account.</p>
-<form action="./login.html" method="post" align="center">
+<!-- <form name='f1' align="center"> -->
     <table align="center" border="5">
        	 <tr>
      		 <td><label for="email"><b>Email:</b></label></td><br>
-      		 <td><br><input type="text" placeholder="Enter Email" name="email" required><br><br></td>
+      		 <td><br><input type="text" placeholder="Enter Email" id="email" ><br><br></td>
    	 </tr>
   	 <tr>
       		<td>
 		
-			      <label for="psw"><b>Password</b></label>
+			      <label for="psw1"><b>Password</b></label>
  
 		</td>
       		<td>
-			<br><input type="password" placeholder="Enter Password" name="psw" required><br><br><br>
+			<br><input type="password" placeholder="Enter Password" id="psw1" ><br><br>
 		</td>
    	 </tr>
-  	 <tr>
+	   	 <tr>
       		<td>
 		
-			      <label for="psw-repeat"><b>Repeat Password</b></label>
+			      <label for="psw2"><b>Re-enter Password</b></label>
  
 		</td>
       		<td>
-			<br><input type="Repeat password" placeholder="Enter Repeat Password" name="psw-repeat" required><br><br><br>
+			<br><input type="re-enter password" placeholder="Re-enter Password" id="psw2" ><br><br>
 		</td>
    	 </tr>
     	<tr> 
       		<td>
 			<label for="phn"><b>Phone Number:</b></label>
-		</td>
+			</td>
       		<td>
-			<input type="text" placeholder="Enter phone number" name="phn" required><br><br>
+			<br><input type="text" placeholder="Enter phone number" id="phno" ><br><br>
 		</td>
     	</tr>	
-	</table><br><br>
-	 <button type="submit">REGISTER</button><br>
-      	<label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me |
+		<tr colspan="2">
+		<td>
+	   <label>
+        <input type="checkbox" checked="checked" id="remember"> Remember me |
       </label>
-	<a href="#">Forgot password?</a></span>
-</form>
+	  </td>
+	  <td>
+		<button type="submit" onclick="formValidation()" >REGISTER</button><br>
+	</td>
+	<tr>
+		<td>
+			<a href="#">Forgot password?</a></span>
+		</td>
+	</tr>	
+	</table>
+<!-- </form> -->
 </body>
 
 
