@@ -2,22 +2,30 @@
 <html>
 <head>
 	<link rel="stylesheet" href="css/file.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-<h1 align="center">Food ordering System</h1>
-	<ul>
- 	 <li><a class="active"  href="index.html"> Home</a></li> 
- 	 <li><a href="contactus.html"> Contact</a></li> 
-	 <li><a href="order.html"> order</a></li>
- 	<li> <a href="login.html"> Login</a></li>
-	</ul>
 	<br><br>
-	<br><br><br>
-	<hr><br><br><br>
+<h1 align="center">Food ordering System</h1>
+<hr>
+	<br><br>
+	<nav class="navbar navbar-secondary bg-secondary justify-content-between">
+	<nav class="nav nav-pills flex-column flex-sm-row">
+ 	 <a class="flex-sm-fill text-sm-center nav-link "  data-toggle="pill" href="index.html"> Home</a>
+ 	 <a class="flex-sm-fill text-sm-center nav-link" data-toggle="pill" href="contactus.html"> Contact</a>
+	 <a class="flex-sm-fill text-sm-center nav-link"  data-toggle="pill" href="order.html"> order</a>
+ 	 <a class="flex-sm-fill text-sm-center nav-link"  data-toggle="pill" href="login.html"> Login</a>
+	</nav>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+	</nav>
+	<br><br>
 	<h2 align="center">Food Items</h2>
 	<br><br>
-	<br><br><br>
-
+	<div id="content">
 	<div class="gallery">
  		 <a target="_blank" href="items.html">
    	 		<img src="food/aalo_matar.jpg" alt="Forest" width="600" height="400">
@@ -116,11 +124,24 @@
   		<div class="desc">Ladoo</div>
 		<button class="button" onclick="this.innerHTML='added'" >Add to order</button>
 	</div>
-	<div class="button1">
+	<div class="button1" align="bottom">
 		<form action="order.html" method="get">
 			<button class="button" onclick="this.innerHTML='added'" >submit</button>
 		</form>
+	</div> 
 	</div>
-  	
+	<div class="footer">
+	<footer class="page-footer bg-secondary">	
+	<nav class="footer-copyright text-center">
+       <h5>Copyright &copy; 2020 Food ordering system <h5>      
+    </nav>	
+	</footer>
+	</div>
 </body>
 </html> 
+
+
+
+
+
+
