@@ -4,13 +4,29 @@
 	<link rel="stylesheet" href="css/file.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("nav").on({
+			mouseenter: function(){
+			  $(this).css("background-color", "lightblue");
+			},  
+			mouseleave: function(){
+			  $(this).css("background-color", "lightgray");
+			},   
+		  });
+		});
+		$(document).ready(){
+			$("#content").slideDown("slow");
+		  
+		});
+</script>
 </head>
 <body>
 	<br><br>
 <h1 align="center">Food ordering System</h1>
 <hr>
 	<br><br>
-	<nav class="navbar navbar-secondary bg-secondary justify-content-between">
+	<nav class="navbar  justify-content-between">
 	<nav class="nav nav-pills flex-column flex-sm-row">
  	 <a class="flex-sm-fill text-sm-center nav-link "  data-toggle="pill" href="index.html"> Home</a>
  	 <a class="flex-sm-fill text-sm-center nav-link" data-toggle="pill" href="contactus.html"> Contact</a>
@@ -26,6 +42,7 @@
 	<h2 align="center">Food Items</h2>
 	<br><br>
 	<div id="content">
+	<div class="jumbotron">
 	<div class="gallery">
  		 <a target="_blank" href="items.html">
    	 		<img src="food/aalo_matar.jpg" alt="Forest" width="600" height="400">
@@ -129,6 +146,7 @@
 			<button class="button" onclick="this.innerHTML='added'" >submit</button>
 		</form>
 	</div> 
+	</div>
 	</div>
 	<div class="footer">
 	<footer class="page-footer bg-secondary">	

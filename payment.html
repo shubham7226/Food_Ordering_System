@@ -5,13 +5,25 @@
 	<link rel="stylesheet" href="css/file.css">
 		  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	  	<script>
+		$(document).ready(function(){
+		  $("nav").on({
+			mouseenter: function(){
+			  $(this).css("background-color", "lightblue");
+			},  
+			mouseleave: function(){
+			  $(this).css("background-color", "lightgray");
+			},   
+		  });
+		});
+</script>
 </head>
 <body>
 	<br><br>
 <h1 align="center">Food ordering System</h1>
 <hr>
 <br><br>
-	<nav class="navbar navbar-secondary bg-secondary justify-content-between">
+	<nav class="navbar  justify-content-between">
 	<nav class="nav nav-pills flex-column flex-sm-row">
  	 <a class="flex-sm-fill text-sm-center nav-link "  data-toggle="pill" href="index.html"> Home</a>
  	 <a class="flex-sm-fill text-sm-center nav-link" data-toggle="pill" href="contactus.html"> Contact</a>

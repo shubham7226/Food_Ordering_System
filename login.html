@@ -39,13 +39,25 @@
  	 border: 3px solid #555;
 	}
 	</style>
+	<script>
+		$(document).ready(function(){
+		  $("nav").on({
+			mouseenter: function(){
+			  $(this).css("background-color", "lightblue");
+			},  
+			mouseleave: function(){
+			  $(this).css("background-color", "lightgray");
+			},   
+		  });
+		});
+</script>
 </head>
 <body>
 	<br><br>
 <h1 align="center">Food ordering System</h1>
 <hr>
-	<nav class="navbar navbar-secondary bg-secondary justify-content-between">
-	<nav class="nav nav-pills flex-column flex-sm-row">
+	<nav class="navbar  justify-content-between">
+	<nav class="nav nav-pills flex-column flex-sm-row" id="x1">
  	 <a class="flex-sm-fill text-sm-center nav-link "  data-toggle="pill" href="index.html"> Home</a>
  	 <a class="flex-sm-fill text-sm-center nav-link" data-toggle="pill" href="contactus.html"> Contact</a>
 	 <a class="flex-sm-fill text-sm-center nav-link"  data-toggle="pill" href="order.html"> order</a>
